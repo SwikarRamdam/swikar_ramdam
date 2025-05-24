@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEJ Application Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TEJ Application Project</h1>
+      <hr />
+      <div class="samosa">
+        <h2>Samosa</h2>
+        <label>Price:<input type="number" id="samosaPrice" /></label>
+        <br />
+        <label
+          >Quantity:
+          <button onclick="changeQty('samosaQty', 1)">+</button>
+          <span id="samosaQty">0</span>
+          <button onclick="changeQty('samosaQty', -1)">-</button>
+        </label>
+        <br />
+        Total: <span id="samosaTotal">0</span>
+      </div>
+      <hr />
+      <div class="Tea">
+        <h2>Tea</h2>
+        <label>Price:<input type="number" id="teaPrice" /></label>
+        <br />
+        <label
+          >Quantity:
+          <button onclick="changeQty('teaQty', 1)">+</button>
+          <span id="teaQty">0</span>
+          <button onclick="changeQty('teaQty', -1)">-</button>
+        </label>
+        <br />
+        Total: <span id="teaTotal">0</span>
+      </div>
+      <hr />
+      <div>
+        Total Price:<span id="totalPrice">0</span><br />
+        Vat (13%): <span id="vat">0</span><br />
+        Tip (10%): <span id="tip">0</span><br />
+        Discount (10%): <span id="discount">0</span>
+      </div>
+      <hr />
+      <div>
+        Grand Total:<span id="grandTotal">0</span><br /><br />
+        <button id="calculate_btn" onclick="calculate()">Calculate</button
+        ><br />
+        <button id="submit_btn">Submit</button>
+        <p id="message">Successfully submitted !!!</p>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
