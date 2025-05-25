@@ -8,6 +8,8 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static('public'));
+
 const DATA_FILE = 'data.json';
 
 if (!fs.existsSync(DATA_FILE)) {
